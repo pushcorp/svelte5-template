@@ -1,4 +1,4 @@
-# runa
+# Main App v2
 
 SvelteKit project that:
 
