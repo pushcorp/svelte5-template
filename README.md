@@ -1,7 +1,8 @@
-# Main App v2
+# SvelteKit Template
 
-SvelteKit project that:
+SvelteKit template project that:
 
+- uses Svelte 5
 - uses Tailwind CSS for styling.
 - uses Shadcn UI (shadcn-svelte) for UI components.
 - uses Lucide Icons (lucide-svelte) for icons.
