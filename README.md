@@ -1,8 +1,8 @@
-# SvelteKit Template
+# Svelte 5 Template
 
-SvelteKit template project that:
+Svelte 5 template project that:
 
-- uses Svelte 5
+- uses SvelteKit as framework for client and server.
 - uses Tailwind CSS for styling.
 - uses Shadcn UI (shadcn-svelte) for UI components.
 - uses Lucide Icons (lucide-svelte) for icons.
