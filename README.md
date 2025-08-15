@@ -12,10 +12,10 @@ Svelte 5 のテンプレートプロジェクトです。
 
 - SvelteKit（クライアント／サーバーのフレームワーク）
 - Tailwind CSS（スタイリング）
-- Shadcn UI（shadcn-svelte、UI コンポーネント）
-- Lucide Icons（lucide-svelte、アイコン）
-- Zod（スキーマバリデーション）
-- Biome（Lint とフォーマット）
+- [Shadcn UI](https://www.shadcn-svelte.com/)（shadcn-svelte、UI コンポーネント）
+- [Lucide Icons](https://lucide.dev/guide/packages/lucide-svelte)（@lucide/svelte、アイコン）
+- [Zod](https://zod.dev/)（スキーマバリデーション）
+- [Biome](https://biomejs.dev/)（Lint とフォーマット）
 
 ## はじめに
 
@@ -60,10 +60,10 @@ Svelte 5 template project that:
 
 - uses SvelteKit as framework for client and server.
 - uses Tailwind CSS for styling.
-- uses Shadcn UI (shadcn-svelte) for UI components.
-- uses Lucide Icons (lucide-svelte) for icons.
-- uses Zod for schema validation.
-- uses Biome for linting and formatting.
+- uses [Shadcn UI](https://www.shadcn-svelte.com/) (shadcn-svelte) for UI components.
+- uses [Lucide Icons](https://lucide.dev/guide/packages/lucide-svelte) (@lucide/svelte) for icons.
+- uses [Zod](https://zod.dev/) for schema validation.
+- uses [Biome](https://biomejs.dev/) for linting and formatting.
 
 ## Getting Started
 
