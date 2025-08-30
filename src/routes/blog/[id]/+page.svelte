@@ -4,12 +4,14 @@
   let { data }: PageProps = $props();
 
   // サーバーからSSRで受け取った記事データ
-  const article = data.article;
+  const article = $derived(data.article);
 
-  const title = article ? `${article.title}` : "記事が見つかりません";
-  const description = article
-    ? article.description
-    : "指定された記事は存在しません。トップページからお探しください。";
+  const title = $derived(article ? `${article.title}` : "記事が見つかりません");
+  const description = $derived(
+    article
+      ? article.description
+      : "指定された記事は存在しません。トップページからお探しください。",
+  );
 </script>
 
 <svelte:head>

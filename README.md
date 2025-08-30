@@ -25,6 +25,11 @@ Svelte 5 のテンプレートプロジェクトです。
 - VSCode の設定済み（Biome のフォーマッターを使用するetc）
 - Cursor のルール記述済み
 
+## 直近の更新・タスク管理
+
+- [x] SSR完全対応
+- [ ] Google Analtyics, Google Search Console の設定
+
 ## 開発の準備
 
 ### 対応する Node.js のインストール
