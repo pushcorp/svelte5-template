@@ -18,9 +18,10 @@ Svelte 5 のテンプレートプロジェクトです。
 ## 特徴
 
 - html lang=ja 設定済み
-- SSR対応（CSR=false）設定済み
+- 完全なSSR対応（CSR=false）設定済み
 - 必要なディレクトリ（src/lib内の components, constants, utils, types 等）があらかじめ作成されている
 - API ルート作成済み
+- スラッグを利用したページ作成済み（SSR対応済み）: `src/routes/blog/[id]` を参照
 - VSCode の設定済み（Biome のフォーマッターを使用するetc）
 - Cursor のルール記述済み
 
@@ -39,6 +40,7 @@ nvm use 20.19.0
 ### 開発サーバーの起動
 
 ```bash
+npm run check
 npm install
 npm run dev
 ```
@@ -51,10 +53,4 @@ npm run dev
 
 ```html
 <html lang="ja">
-```
-
-英語にしたい場合は次のように変更してください。
-
-```html
-<html lang="en">
 ```
