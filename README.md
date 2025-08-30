@@ -1,7 +1,5 @@
 # Svelte 5 Template
 
-(English guide is below)
-
 ## Svelte 5 テンプレート 概要
 
 Svelte 5 のテンプレートプロジェクトです。
@@ -17,7 +15,16 @@ Svelte 5 のテンプレートプロジェクトです。
 - [Zod](https://zod.dev/)（スキーマバリデーション）
 - [Biome](https://biomejs.dev/)（Lint とフォーマット）
 
-## はじめに
+## 特徴
+
+- html lang=ja 設定済み
+- SSR対応（CSR=false）設定済み
+- 必要なディレクトリ（src/lib内の components, constants, utils, types 等）があらかじめ作成されている
+- API ルート作成済み
+- VSCode の設定済み（Biome のフォーマッターを使用するetc）
+- Cursor のルール記述済み
+
+## 開発の準備
 
 ### 対応する Node.js のインストール
 
@@ -47,54 +54,6 @@ npm run dev
 ```
 
 英語にしたい場合は次のように変更してください。
-
-```html
-<html lang="en">
-```
-
-## Svelte 5 Template Overview
-
-This project is created to start a new project quickly using Svelte 5 / SvelteKit.
-
-Svelte 5 template project that:
-
-- uses SvelteKit as framework for client and server.
-- uses Tailwind CSS for styling.
-- uses [Shadcn UI](https://www.shadcn-svelte.com/) (shadcn-svelte) for UI components.
-- uses [Lucide Icons](https://lucide.dev/guide/packages/lucide-svelte) (@lucide/svelte) for icons.
-- uses [Zod](https://zod.dev/) for schema validation.
-- uses [Biome](https://biomejs.dev/) for linting and formatting.
-
-## Getting Started
-
-### Install a compatible Node.js version
-
-```bash
-nvm install 20.19.0
-nvm use 20.19.0
-```
-
-(This is an example. See the compatible version in `package.json`.)
-(nvm is a Node version manager. You can use any other manager like n or nodebrew.)
-
-### Start the development server
-
-```bash
-npm install
-npm run dev
-```
-
-### English / Japanese
-
-In `src/app.html`, you can change the language of the website by changing the `lang` attribute.
-
-Default is Japanese.
-
-```html
-<html lang="ja">
-```
-
-So change it like this if you want English.
 
 ```html
 <html lang="en">
