@@ -3,31 +3,13 @@
 
   let { data }: PageProps = $props();
 
-  const ARTICLES = [
-    {
-      id: "1",
-      title: "記事1",
-      description: "記事1の概要",
-      content: "記事1の内容",
-    },
-    {
-      id: "2",
-      title: "記事2",
-      description: "記事2の概要",
-      content: "記事2の内容",
-    },
-  ];
+  // サーバーからSSRで受け取った記事データ
+  const article = data.article;
 
-  // ページパラメータ
-  const articleId: string = data.id;
-
-  // 対象エントリ
-  const article = ARTICLES.find((a) => a.id === articleId);
-
-  const title = article ? `${article.title}` : "キャラクターが見つかりません";
+  const title = article ? `${article.title}` : "記事が見つかりません";
   const description = article
     ? article.description
-    : "指定されたキャラクターは存在しません。トップページからお探しください。";
+    : "指定された記事は存在しません。トップページからお探しください。";
 </script>
 
 <svelte:head>
