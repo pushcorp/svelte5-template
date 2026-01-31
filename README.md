@@ -14,21 +14,17 @@ Svelte 5 のテンプレートプロジェクトです。
 - [Lucide Icons](https://lucide.dev/guide/packages/lucide-svelte)（@lucide/svelte、アイコン）
 - [Zod](https://zod.dev/)（スキーマバリデーション）
 - [Biome](https://biomejs.dev/)（Lint とフォーマット）
+- [Svelte Sonner](https://svelte-sonner.vercel.app/)
 
 ## 特徴
 
 - html lang=ja 設定済み
 - 完全なSSR対応（CSR=false）設定済み
-- 必要なディレクトリ（src/lib内の components, constants, utils, types 等）があらかじめ作成されている
+- 必要なディレクトリ（src/lib内の components, constants, utils, types, server 等）があらかじめ作成されている
 - API ルート作成済み
 - スラッグを利用したページ作成済み（SSR対応済み）: `src/routes/blog/[id]` を参照
 - VSCode の設定済み（Biome のフォーマッターを使用するetc）
-- Cursor のルール記述済み
-
-## 直近の更新・タスク管理
-
-- [x] SSR完全対応
-- [ ] Google Analtyics, Google Search Console の設定
+- Cursor のルール記述済み（CLAUDE.mdからもそのルールを参照させるようにプロンプト記述済みなのでClaude Codeも利用可能）
 
 ## 開発の準備
 
