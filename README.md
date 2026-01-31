@@ -55,3 +55,11 @@ npm run dev
 ```html
 <html lang="ja">
 ```
+
+## その他
+
+  - `.markdownlint.json` を設定済みですが、お好みで変更・削除などしてください。
+
+## ライセンス
+
+[MIT](https://opensource.org/license/mit)
