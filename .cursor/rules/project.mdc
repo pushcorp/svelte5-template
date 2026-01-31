@@ -1,0 +1,10 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+# Project info
+
+- This is a project template for Svelte 5 (runes), SvelteKit, TypeScript, Tailwind CSS, Shadcn UI (shadcn-svelte), Lucide Icons (@lucide/svelte).
+- This project aims to provide a starting point for building modern web applications using Svelte.

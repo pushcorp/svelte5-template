@@ -1,0 +1,1 @@
+- Always read `.cursor/rules/project.mdc` file at first. Then think and respond.
