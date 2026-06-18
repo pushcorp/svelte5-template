@@ -36,12 +36,15 @@ nvm use 20.19.0
 （上記は一例です。実際の対応バージョンは `package.json` を参照してください）
 （nvm は Node のバージョンマネージャーです。n や nodebrew 等を使っても構いません）
 
+このプロジェクトのパッケージマネージャーは pnpm（corepack でバージョン固定）です。
+
 ### 開発サーバーの起動
 
 ```bash
-npm run check
-npm install
-npm run dev
+corepack enable
+pnpm install
+pnpm check
+pnpm dev
 ```
 
 ### 表示言語（英語／日本語）
