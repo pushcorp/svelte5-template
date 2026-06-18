@@ -82,12 +82,22 @@ src/
 - Use `uuid("id").defaultRandom().primaryKey()` for primary keys.
 - Column naming: camelCase field name mapping to snake_case SQL column — e.g., `displayName: varchar("display_name", { length: 120 })`.
 
-## Svelte 5 Runes
+## Svelte 5 — runes only, no Svelte 4 syntax
 
-Use Svelte 5 runes instead of old Svelte 4 patterns.
-
-- State: Use `let count = $state(0)` instead of old `let count = writable(0)` / `$count`
-- Derived: Use `let doubled = $derived(count * 2)` instead of old `$: doubled = count * 2`
-- Effect: Use `$effect(() => { if (count > 5) ... })` instead of old `$: if (count > 5) ...`
-- Props: Use `let { title = 'Default' } = $props()` instead of old `export let title = 'Default'`
-- Slots: Use `let { header } = $props()` / `{@render header()}` instead of old `<slot name="header" />`
+* Props: `let { foo, bar = 0 }: Props = $props()` — never `export let foo`.
+* Reactive state: `let count = $state(0)` — never plain `let` for reactive values.
+* Derived: `const doubled = $derived(count * 2)` — never `$:` labels.
+* Side effects: `$effect(() => { ... })` — never `$:` for effects.
+* Event handlers: `onclick={handler}`, `onfocus={...}` — never `on:click`.
+* Children/snippets: `{@render children()}` — never `<slot />`.
+* Page store: `import { page } from "$app/state"` — never `$app/stores`.
+* Note: CSR (client-side hydration) is enabled in both dev and prod across all routes. Reactive values still MUST go through `$derived` — using plain `let` for derived state is a Svelte 5 anti-pattern regardless of SSR/CSR config.
+* Get page data in `+page.svelte` from server `+page.server.ts` like this:
+```svelte
+<!-- +page.svelte -->
+<script lang="ts">
+  import type { PageProps } from "./$types";
+  let { data }: PageProps = $props();
+  const { postId, postTitle } = $derived(data);
+</script>
+```
