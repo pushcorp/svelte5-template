@@ -3,22 +3,27 @@
 - This is a project template for Svelte 5 (runes), SvelteKit, TypeScript, Tailwind CSS, Shadcn UI (shadcn-svelte), Lucide Icons (@lucide/svelte), Svelte Sonner.
 - This project aims to provide a starting point for building modern web applications using Svelte.
 
+## Package Manager
+
+- This project uses **pnpm** (pinned via corepack, see the `packageManager` field in `package.json`).
+- Enable it once with `corepack enable`, then install dependencies with `pnpm install`.
+
 ## Scripts
 
 | Command | Description |
 |---|---|
-| `npm run dev` | Start dev server (Vite) |
-| `npm run build` | Production build |
-| `npm run preview` | Preview production build |
-| `npm run start` | Run production server (`node build/index.js`) |
-| `npm run check` | Svelte type check |
-| `npm run check:watch` | Svelte type check (watch mode) |
-| `npm run format` | Format with Biome |
-| `npm run format:check` | Check formatting |
-| `npm run lint` | Lint with Biome |
-| `npm run lint:fix` | Lint and auto-fix |
-| `npm run check:all` | Biome full check (format + lint) |
-| `npm run check:all:fix` | Biome full check with auto-fix |
+| `pnpm dev` | Start dev server (Vite) |
+| `pnpm build` | Production build |
+| `pnpm preview` | Preview production build |
+| `pnpm start` | Run production server (`node build/index.js`) |
+| `pnpm check` | Svelte type check |
+| `pnpm check:watch` | Svelte type check (watch mode) |
+| `pnpm format` | Format with Biome |
+| `pnpm format:check` | Check formatting |
+| `pnpm lint` | Lint with Biome |
+| `pnpm lint:fix` | Lint and auto-fix |
+| `pnpm check:all` | Biome full check (format + lint) |
+| `pnpm check:all:fix` | Biome full check with auto-fix |
 
 ## Database
 
